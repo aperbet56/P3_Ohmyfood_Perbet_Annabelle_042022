@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a { 
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: "Shrikhand, cursive";
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.price {
+    font-weight: bold;
+}
