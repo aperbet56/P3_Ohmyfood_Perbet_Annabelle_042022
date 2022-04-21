@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: "Shrikhand, cursive";
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.price {
+  font-weight: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin: 25px 0 20px 0;
+}
+
+.logo img {
+  width: 170px;
+}
+/*# sourceMappingURL=style.css.map */
