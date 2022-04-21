@@ -73,4 +73,285 @@ header {
 .logo img {
   width: 170px;
 }
+
+/**** Localisation ****/
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaeaea;
+  -webkit-box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+  height: 50px;
+  margin-left: -22px;
+}
+
+.location i {
+  margin-right: 15px;
+}
+
+.location__city {
+  margin: 15px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.presentation {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.presentation__heading {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.presentation__text {
+  text-align: center;
+  margin: 15px 0 25px 0;
+  font-weight: 100;
+}
+
+.presentation__button {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
+  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  width: 230px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 18px 20px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.presentation__button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+/**** Section Fonctionnement ****/
+.process {
+  width: 100%;
+}
+
+.process h2 {
+  margin: 50px 0 20px 20px;
+}
+
+.process__steps {
+  margin: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.process__steps .process__step {
+  width: 375px;
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 6px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background: #f6f6f6;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.process__steps .process__step:hover {
+  background-color: #faf5ff;
+  cursor: pointer;
+}
+
+.process__steps .process__step .process__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9356dc;
+  color: #ffffff;
+  border-radius: 100px;
+  border: 1px solid #9356dc;
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -12px;
+  top: 23px;
+}
+
+.process__steps .process__step .process__icon {
+  margin: 27px 35px 0 35px;
+  color: #696969;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.process__steps .process__step .process__icon:hover {
+  color: #9356dc;
+}
+
+.process__steps .process__step .process__text {
+  font-weight: 500;
+  text-align: center;
+  margin-top: -18px;
+}
+
+/**** Section Restaurants ****/
+.restaurants {
+  background-color: #f6f6f6;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.restaurants__title {
+  margin: 50px 0 15px 20px;
+}
+
+.restaurants__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  width: 335px;
+  width: 100%;
+  height: 252px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+  margin: 14px 20px;
+  position: relative;
+}
+
+.card figure {
+  height: 252px;
+}
+
+.card__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  height: 100%;
+  max-height: 188px;
+}
+
+.card__legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 5%;
+  margin-top: 7px;
+  position: relative;
+}
+
+.card__title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card:last-child {
+  margin-bottom: 65px;
+}
+
+.btn-new {
+  color: #008766;
+  background: #99e2d0;
+  padding: 5px;
+  border-radius: 2px;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  font-weight: 400;
+  font-size: 14px;
+  width: 68px;
+  max-width: 68px;
+  width: 100%;
+  text-align: center;
+  /*animation: clignote 2s linear infinite;*/
+}
+
+.card__btn__heart {
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  color: #686565;
+}
 /*# sourceMappingURL=style.css.map */
