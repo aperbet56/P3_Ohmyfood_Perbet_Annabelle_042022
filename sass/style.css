@@ -226,7 +226,7 @@ footer h3 {
   font-family: "Shrikhand", "cursive";
   font-weight: lighter;
   color: #ffffff;
-  padding-left: 25px;
+  margin: 15px 0 15px 25px;
 }
 
 footer ul {
@@ -295,7 +295,7 @@ footer ul .fas {
   padding: 40px;
 }
 
-.presentation__heading {
+.presentation__title {
   text-align: center;
   padding: 0 10px;
 }
