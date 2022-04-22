@@ -74,6 +74,52 @@ header {
   width: 170px;
 }
 
+footer {
+  background-color: #4d4c4c;
+  color: #ffffff;
+  width: 100%;
+  height: 175px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer h3 {
+  font-family: "Shrikhand", "cursive";
+  font-weight: lighter;
+  color: #ffffff;
+  padding-left: 25px;
+}
+
+footer ul {
+  font-size: 16px;
+}
+
+footer ul li {
+  margin-bottom: 7px;
+  margin-left: 25px;
+}
+
+footer ul li:last-child {
+  margin-bottom: 30px;
+}
+
+footer ul .fas {
+  color: #ffffff;
+  width: 15px;
+  padding-left: 0;
+  padding-right: 25px;
+}
+
 /**** Localisation ****/
 .location {
   display: -webkit-box;
