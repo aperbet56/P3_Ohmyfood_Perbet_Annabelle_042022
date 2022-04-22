@@ -53,6 +53,121 @@ p {
   font-weight: bold;
 }
 
+.loading-spinner {
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-animation: loading-spinner 3s linear;
+          animation: loading-spinner 3s linear;
+  visibility: hidden;
+}
+
+.loading-spinner__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 8px solid transparent;
+  border-top: 8px solid #9356dc;
+  border-bottom: 8px solid #ff79da;
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: loading-spinner-border 3s linear;
+          animation: loading-spinner-border 3s linear;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.loading-spinner__center {
+  background-color: #99e2d0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+}
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes loading-spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loading-spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

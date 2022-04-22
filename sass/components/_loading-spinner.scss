@@ -1,0 +1,70 @@
+// Animation loading-spinner 
+
+.loading-spinner {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    animation: loading-spinner 3s linear;
+    visibility: hidden;
+    &__border {
+        @include flexcenter;
+        border: 8px solid transparent;
+        border-top: 8px solid $color-primary;
+        border-bottom: 8px solid $color-secondary;
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        animation: loading-spinner-border 3s linear;
+        z-index: 50;
+        visibility: hidden;
+    }
+    &__center {
+        background-color: $color-tertiary;
+        width: 16px;
+        height: 16px;
+        border-radius: 100px;
+    }
+}
+
+@keyframes loading-spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.7;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes loading-spinner-border {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
