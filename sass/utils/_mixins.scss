@@ -25,3 +25,23 @@
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
     cursor: pointer;   
 }
+
+// Media Queries
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width: map-get($breakpoints, large)) {
+        @content;
+    }
+}

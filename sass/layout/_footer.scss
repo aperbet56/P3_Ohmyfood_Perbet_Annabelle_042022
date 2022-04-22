@@ -6,6 +6,9 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
+    @include tablet {
+        @include flexcenter();
+    }
     & a {
         color: #ffffff;
     }
