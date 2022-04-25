@@ -1,11 +1,10 @@
 header {
     @include flexcenter();
     width: 100%;
-}
-
-.logo {
+    .logo {
     margin: 25px 0 20px 0;
-    & img {
+        & img {
         width: 170px;
+        }
     }
 }

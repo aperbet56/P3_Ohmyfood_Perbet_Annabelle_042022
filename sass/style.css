@@ -181,11 +181,11 @@ header {
   width: 100%;
 }
 
-.logo {
+header .logo {
   margin: 25px 0 20px 0;
 }
 
-.logo img {
+header .logo img {
   width: 170px;
 }
 
