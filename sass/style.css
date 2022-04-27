@@ -191,7 +191,8 @@ header .logo img {
   width: 170px;
 }
 
-.fa-arrow-left {
+.fa-arrow-left::before {
+  content: "\f060";
   position: absolute;
   left: 32px;
   height: 32px;
