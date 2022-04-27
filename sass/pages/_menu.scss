@@ -10,3 +10,112 @@
         object-fit: cover;
     }
 }
+
+/**** Section menu ****/ 
+
+.menu {
+    position: relative;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: $light-grey;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin-top: -70px;
+    z-index: 1;
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.submenu {
+    width: 100%;
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+        &::after {
+            content: "";
+            display: block;
+            width: 45px;
+            height: 3px;
+            margin-top: 3px;
+            background-color: $color-tertiary;
+        }
+    }
+}
+
+.menuItem {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: relative;
+    margin: 18px 0;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    &__legend {
+        width: 100%;
+        padding: 12px;
+        overflow: hidden;
+    }
+    & h4,
+    & p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    & h4 {
+        font-weight: 500;
+    }
+    & p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .price {
+        align-self: flex-end;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .confirmation {
+        @include flexcenter();
+        padding: 10px 20px;
+        display: none; // pour que l'icône de confirmation disparaisse de l'écran
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $color-tertiary;
+        & i {
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+}
+
+/**** Bouton Commander ****/
+
+.orderMeal {
+    width: 100%;
+    @include flexcenter();
+    &__btn {
+        @include button-style;
+        margin-top: 40px;
+        margin-bottom: 70px;
+        &:hover {
+            @include button-hover();
+        }
+    }
+}
