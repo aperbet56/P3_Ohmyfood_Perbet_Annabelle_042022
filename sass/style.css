@@ -367,12 +367,12 @@ footer ul .fas {
   width: 100%;
 }
 
-.process h2 {
+.process__title {
   margin: 50px 0 20px 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .process h2 {
+  .process__title {
     text-align: center;
   }
 }
@@ -409,7 +409,7 @@ footer ul .fas {
   }
 }
 
-.process__steps .process__step {
+.process__step {
   width: 375px;
   width: 100%;
   height: 70px;
@@ -435,24 +435,28 @@ footer ul .fas {
 }
 
 @media screen and (min-width: 768px) {
-  .process__steps .process__step {
+  .process__step {
     width: 45%;
     margin: 30px 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .process__steps .process__step {
+  .process__step {
     width: 30%;
   }
 }
 
-.process__steps .process__step:hover {
+.process__step:hover {
   background-color: #faf5ff;
   cursor: pointer;
 }
 
-.process__steps .process__step .process__number {
+.process__step:hover > .process__icon {
+  color: #9356dc;
+}
+
+.process__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,18 +480,15 @@ footer ul .fas {
           transform: translateY(-50%);
 }
 
-.process__steps .process__step .process__icon {
+.process__icon {
   margin: 27px 35px 0 35px;
   color: #696969;
+  font-size: 16px;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-.process__steps .process__step .process__icon:hover {
-  color: #9356dc;
-}
-
-.process__steps .process__step .process__text {
+.process__text {
   font-weight: 500;
   text-align: center;
   margin-top: -18px;
@@ -543,6 +544,15 @@ footer ul .fas {
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
   margin: 14px 20px;
   position: relative;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 @media screen and (min-width: 768px) {
@@ -562,6 +572,23 @@ footer ul .fas {
   .card {
     height: 380px;
   }
+}
+
+.card__btn-new {
+  color: #008766;
+  background: #99e2d0;
+  padding: 5px;
+  border-radius: 2px;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  font-weight: 400;
+  font-size: 14px;
+  width: 68px;
+  max-width: 68px;
+  width: 100%;
+  text-align: center;
+  /*animation: clignote 2s linear infinite;*/
 }
 
 .card figure {
@@ -625,30 +652,6 @@ footer ul .fas {
 
 .card:last-child {
   margin-bottom: 65px;
-}
-
-.btn-new {
-  color: #008766;
-  background: #99e2d0;
-  padding: 5px;
-  border-radius: 2px;
-  position: absolute;
-  right: 3%;
-  top: 5%;
-  font-weight: 400;
-  font-size: 14px;
-  width: 68px;
-  max-width: 68px;
-  width: 100%;
-  text-align: center;
-  /*animation: clignote 2s linear infinite;*/
-}
-
-.card__btn__heart {
-  position: absolute;
-  right: 20px;
-  top: 4px;
-  color: #686565;
 }
 
 /**** Image ****/
