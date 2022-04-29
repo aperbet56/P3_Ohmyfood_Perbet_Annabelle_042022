@@ -178,7 +178,6 @@
         max-width: 68px;
         width: 100%;
         text-align: center;
-        /*animation: clignote 2s linear infinite;*/
     }
     figure {
         height: 252px;
@@ -219,4 +218,38 @@
 
 .card:last-child {
     margin-bottom: 65px;
+}
+
+.card__btn__heart {
+    position: absolute;
+    top: 7px;
+    left: 86%;
+    @include flexcenter();
+    height: 26px;
+    width: 29px;
+    &--empty {
+      font-size: 16px;
+      position: absolute;
+      transition: opacity 1s ease-in-out;
+    }
+    &--animated {
+      position: absolute;
+      opacity: 0;
+      font-size: 16px;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: opacity 1s ease-in-out;
+    }
+    &:hover {
+        cursor: pointer;
+        & > .card__btn__heart--empty {
+            opacity: 0;
+        }
+        & > .card__btn__heart--animated {
+            opacity: 1;
+        }
+    }
 }
