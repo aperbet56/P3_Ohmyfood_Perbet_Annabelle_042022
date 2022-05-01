@@ -28,6 +28,29 @@
         align-items: center;
         justify-content: space-between;
     }
+    &__btn__heart {
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        top: 30px;
+        left: 86%;
+        @include flexcenter();
+        &--empty {
+           @include empty-heart();
+        }
+        &--animated {
+            @include full-heart();
+        }
+        &:hover {
+            cursor: pointer;
+            & > .menu__btn__heart--empty {
+                opacity: 0;
+            }
+            & > .menu__btn__heart--animated {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .menus {

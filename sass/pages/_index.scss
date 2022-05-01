@@ -226,22 +226,12 @@
     left: 86%;
     @include flexcenter();
     height: 26px;
-    width: 29px;
+    width: 26px;
     &--empty {
-      font-size: 16px;
-      position: absolute;
-      transition: opacity 1s ease-in-out;
+      @include empty-heart();
     }
     &--animated {
-      position: absolute;
-      opacity: 0;
-      font-size: 16px;
-      background: $gradient;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: opacity 1s ease-in-out;
+     @include full-heart();
     }
     &:hover {
         cursor: pointer;
