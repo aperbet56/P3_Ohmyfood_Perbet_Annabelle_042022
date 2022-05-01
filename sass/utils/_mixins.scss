@@ -1,8 +1,11 @@
+// Mixin centrage horizontal et vertical
 @mixin flexcenter {
     display:flex;
     justify-content: center;
     align-items: center;
 }
+
+// Mixins boutons
 
 @mixin button-style {
     opacity: 1;
@@ -26,7 +29,27 @@
     cursor: pointer;   
 }
 
-// Media Queries
+// Mixins animation du coeur
+
+@mixin empty-heart {
+    position: absolute;
+    font-size: 27px;
+    transition: opacity 1s ease-in-out;
+}
+
+@mixin full-heart {
+    position: absolute;
+    font-size: 27px;
+    opacity: 0;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 1s ease-in-out;
+}
+
+//  Mixin Media Queries
 
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
