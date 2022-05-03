@@ -898,6 +898,19 @@ footer ul .fas {
   cursor: pointer;
 }
 
+.menuItem:hover > .confirmation {
+  margin-right: 0;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
+}
+
+.menuItem:hover > .confirmation > i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-animation: rotate 0.6s both;
+          animation: rotate 0.6s both;
+}
+
 .menuItem__legend {
   width: 100%;
   padding: 12px;
@@ -909,10 +922,6 @@ footer ul .fas {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.menuItem h4 {
-  font-weight: 500;
 }
 
 .menuItem p {
@@ -940,7 +949,7 @@ footer ul .fas {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
-  display: none;
+  margin-right: -60px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #99e2d0;
@@ -949,6 +958,28 @@ footer ul .fas {
 .menuItem .confirmation i {
   font-size: 20px;
   color: #ffffff;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /**** Bouton Commander ****/
