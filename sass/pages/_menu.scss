@@ -117,9 +117,7 @@
     cursor: pointer;
     &:hover > .confirmation {
         margin-right: 0;
-        transition: margin-right 0.5s;
         & > i {
-            transform: rotate(360deg);
             animation: rotate 0.6s both;
         }
     }
@@ -152,6 +150,7 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: $color-tertiary;
+        transition: margin-right 0.6s;
         & i {
             font-size: 20px;
             color: #ffffff;
