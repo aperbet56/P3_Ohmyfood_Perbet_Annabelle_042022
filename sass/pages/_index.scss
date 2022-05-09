@@ -152,7 +152,7 @@
     position: relative;
     transition: transform 0.3s ease-in-out;
     &:hover {
-        transform: scale(1.02)
+        transform: scale(1.02);
     }
     @include tablet {
         width: 44%;
@@ -178,15 +178,6 @@
         max-width: 68px;
         width: 100%;
         text-align: center;
-    }
-    figure {
-        height: 252px;
-        @include desktop {
-            height: 300px;
-        }
-        @include large {
-            height: 380px;
-        }
     }
     &__image {
         object-fit: cover;

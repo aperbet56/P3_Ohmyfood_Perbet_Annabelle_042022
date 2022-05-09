@@ -49,10 +49,6 @@ p {
   font-weight: 300;
 }
 
-.price {
-  font-weight: bold;
-}
-
 .loading-spinner {
   width: 100vw;
   height: 100vh;
@@ -169,7 +165,6 @@ p {
 }
 
 header {
-  margin: 25px 0 20px 0;
   width: 100%;
   position: relative;
 }
@@ -191,7 +186,7 @@ header .logo img {
   width: 170px;
 }
 
-header .fa-arrow-left {
+header .logo .fa-arrow-left {
   position: absolute;
   left: 32px;
   height: 32px;
@@ -587,22 +582,6 @@ footer ul .fas {
   max-width: 68px;
   width: 100%;
   text-align: center;
-}
-
-.card figure {
-  height: 252px;
-}
-
-@media screen and (min-width: 992px) {
-  .card figure {
-    height: 300px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .card figure {
-    height: 380px;
-  }
 }
 
 .card__image {

@@ -1,23 +1,22 @@
 header {
-    margin: 25px 0 20px 0;
     width: 100%;
     position: relative;
     .logo {
-    @include flexcenter();
-    margin: 25px 0 20px 0;
-        & img {
-        width: 170px;
-        }
-    }
-    .fa-arrow-left {
-        position: absolute;
-        left: 32px;
-        height: 32px;
-        width: 32px;
         @include flexcenter();
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 18px;
-        font-weight: bold;
+        margin: 25px 0 20px 0;
+        & img {
+            width: 170px;
+        }
+        & .fa-arrow-left {
+            position: absolute;
+            left: 32px;
+            height: 32px;
+            width: 32px;
+            @include flexcenter();
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            font-weight: bold;
+        }
     }
 }
