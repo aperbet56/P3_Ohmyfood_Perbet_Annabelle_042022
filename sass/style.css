@@ -670,7 +670,7 @@ footer ul .fas {
 }
 
 .card__btn__heart--empty {
-  position: absolute;
+  position: relative;
   font-size: 27px;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
@@ -793,7 +793,7 @@ footer ul .fas {
 }
 
 .menu__btn__heart--empty {
-  position: absolute;
+  position: relative;
   font-size: 27px;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;

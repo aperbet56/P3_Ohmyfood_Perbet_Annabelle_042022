@@ -32,7 +32,7 @@
 // Mixins animation du coeur
 
 @mixin empty-heart {
-    position: absolute;
+    position: relative;
     font-size: 27px;
     transition: opacity 1s ease-in-out;
 }
