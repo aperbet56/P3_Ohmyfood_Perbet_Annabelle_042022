@@ -9,17 +9,15 @@ header {
         width: 170px;
         }
     }
-}
-
-.fa-arrow-left::before {
-    content: "\f060";
-    position: absolute;
-    left: 32px;
-    height: 32px;
-    width: 32px;
-    @include flexcenter();
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    font-weight: bold;
+    .fa-arrow-left {
+        position: absolute;
+        left: 32px;
+        height: 32px;
+        width: 32px;
+        @include flexcenter();
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
