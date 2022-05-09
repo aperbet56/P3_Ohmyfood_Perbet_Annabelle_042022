@@ -950,11 +950,11 @@ footer ul .fas {
           animation-delay: 1s;
 }
 
-.menuItem:hover > .confirmation {
+.menuItem:hover > .menuItem__confirmation {
   margin-right: 0;
 }
 
-.menuItem:hover > .confirmation > i {
+.menuItem:hover > .menuItem__confirmation > i {
   -webkit-animation: rotate 0.6s both;
           animation: rotate 0.6s both;
 }
@@ -977,7 +977,7 @@ footer ul .fas {
   font-size: 15px;
 }
 
-.menuItem .price {
+.menuItem__price {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-bottom: 12px;
@@ -986,7 +986,7 @@ footer ul .fas {
   font-size: 15px;
 }
 
-.menuItem .confirmation {
+.menuItem__confirmation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,7 +1005,7 @@ footer ul .fas {
   transition: margin-right 0.6s;
 }
 
-.menuItem .confirmation i {
+.menuItem__confirmation i {
   font-size: 20px;
   color: #ffffff;
 }

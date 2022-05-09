@@ -121,7 +121,7 @@
             animation-delay: ($i * 0.1s);
         }
     }
-    &:hover > .confirmation {
+    &:hover > &__confirmation {
         margin-right: 0;
         & > i {
             animation: rotate 0.6s both;
@@ -142,14 +142,14 @@
         margin-top: 10px;
         font-size: 15px;
     }
-    .price {
+    &__price {
         align-self: flex-end;
         padding-bottom: 12px;
         padding-right: 20px;
         font-weight: 500;
         font-size: 15px;
     }
-    .confirmation {
+    &__confirmation {
         @include flexcenter();
         padding: 10px 20px;
         margin-right: -60px; // pour que l'icône de confirmation disparaisse de l'écran
