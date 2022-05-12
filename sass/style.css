@@ -874,58 +874,8 @@ footer ul .fas {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: appear 0.6s both;
-          animation: appear 0.6s both;
-}
-
-.menuItem .delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.menuItem .delay-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.menuItem .delay-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.menuItem .delay-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.menuItem .delay-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.menuItem .delay-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.menuItem .delay-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.menuItem .delay-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.menuItem .delay-9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.menuItem .delay-10 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: appear 1s both;
+          animation: appear 1s both;
 }
 
 .menuItem:hover > .menuItem__confirmation {
@@ -1008,6 +958,56 @@ footer ul .fas {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.delay-10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes appear {
