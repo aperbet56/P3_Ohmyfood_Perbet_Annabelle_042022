@@ -1,0 +1,23 @@
+// bouton Explorer nos restaurants
+
+.presentation__button {
+    @include button-style();
+    &:hover {
+        @include button-hover();
+    }
+}
+
+// Bouton Commander
+
+.orderMeal {
+    width: 100%;
+    @include flexcenter();
+    &__btn {
+        @include button-style;
+        margin-top: 40px;
+        margin-bottom: 70px;
+        &:hover {
+            @include button-hover();
+        }
+    }
+}

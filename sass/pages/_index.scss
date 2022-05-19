@@ -30,12 +30,6 @@
         margin: 15px 0 25px 0;
         font-weight: 100;
     }
-    &__button {
-        @include button-style();
-        &:hover {
-            @include button-hover();
-        }
-    }
 }
 
 /**** Section Fonctionnement ****/

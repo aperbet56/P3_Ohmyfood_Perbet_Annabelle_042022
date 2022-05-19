@@ -49,6 +49,73 @@ p {
   font-weight: 300;
 }
 
+.presentation__button {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
+  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  width: 230px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 18px 20px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.presentation__button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.orderMeal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderMeal__btn {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
+  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  width: 230px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 18px 20px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.orderMeal__btn:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
 .loading-spinner {
   width: 100vw;
   height: 100vh;
@@ -328,32 +395,6 @@ footer ul .fas {
   text-align: center;
   margin: 15px 0 25px 0;
   font-weight: 100;
-}
-
-.presentation__button {
-  opacity: 1;
-  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
-  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
-  outline: none;
-  border: none;
-  border-radius: 100px;
-  width: 230px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  padding: 18px 20px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.presentation__button:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-  cursor: pointer;
 }
 
 /**** Section Fonctionnement ****/
@@ -1034,47 +1075,5 @@ footer ul .fas {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-}
-
-/**** Bouton Commander ****/
-.orderMeal {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.orderMeal__btn {
-  opacity: 1;
-  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
-  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
-  outline: none;
-  border: none;
-  border-radius: 100px;
-  width: 230px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  padding: 18px 20px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  margin-top: 40px;
-  margin-bottom: 70px;
-}
-
-.orderMeal__btn:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
