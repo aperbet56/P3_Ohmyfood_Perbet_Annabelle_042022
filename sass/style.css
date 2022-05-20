@@ -12,6 +12,7 @@ body {
   margin: auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  min-width: 350px;
 }
 
 ul,
@@ -388,7 +389,7 @@ footer ul .fas {
 
 .presentation__title {
   text-align: center;
-  padding: 0 10px;
+  padding: 0 17px;
 }
 
 .presentation__text {
@@ -521,6 +522,12 @@ footer ul .fas {
   font-size: 16px;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .process__icon {
+    margin: 27px 30px 0 30px;
+  }
 }
 
 .process__text {
@@ -700,11 +707,11 @@ footer ul .fas {
   position: absolute;
   font-size: 27px;
   opacity: 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
-  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
+  background-image: linear-gradient(to bottom right, #f89fe0, #c358eb);
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -742,6 +749,12 @@ footer ul .fas {
 }
 
 @media screen and (min-width: 992px) {
+  .hero__img img {
+    max-height: 450px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .hero__img img {
     max-height: 500px;
   }
@@ -823,11 +836,11 @@ footer ul .fas {
   position: absolute;
   font-size: 27px;
   opacity: 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
-  background: linear-gradient(to bottom right, #f89fe0, #c358eb);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f89fe0), to(#c358eb));
+  background-image: linear-gradient(to bottom right, #f89fe0, #c358eb);
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -890,6 +903,7 @@ footer ul .fas {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 19px;
 }
 
 .submenu__title::after {
@@ -924,8 +938,8 @@ footer ul .fas {
 }
 
 .menuItem:hover > .menuItem__confirmation > i {
-  -webkit-animation: rotate 0.6s both;
-          animation: rotate 0.6s both;
+  -webkit-animation: rotate 0.6s ease-in-out;
+          animation: rotate 0.6s ease-in-out;
 }
 
 .menuItem__legend {
