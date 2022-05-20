@@ -128,8 +128,8 @@ p {
   bottom: 0;
   left: 0;
   z-index: 100;
-  -webkit-animation: loading-spinner 3s linear;
-          animation: loading-spinner 3s linear;
+  -webkit-animation: display-loader 3s linear;
+          animation: display-loader 3s linear;
   visibility: hidden;
 }
 
@@ -155,8 +155,8 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-animation: loading-spinner-border 3s linear;
-          animation: loading-spinner-border 3s linear;
+  -webkit-animation: loading-spinner 3s linear;
+          animation: loading-spinner 3s linear;
   z-index: 50;
   visibility: hidden;
 }
@@ -168,35 +168,35 @@ p {
   border-radius: 100px;
 }
 
+@-webkit-keyframes display-loader {
+  0% {
+    visibility: visible;
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes display-loader {
+  0% {
+    visibility: visible;
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 @-webkit-keyframes loading-spinner {
-  0% {
-    visibility: visible;
-    opacity: 0.7;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes loading-spinner {
-  0% {
-    visibility: visible;
-    opacity: 0.7;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes loading-spinner-border {
   0% {
     visibility: visible;
     opacity: 1;
@@ -214,7 +214,7 @@ p {
   }
 }
 
-@keyframes loading-spinner-border {
+@keyframes loading-spinner {
   0% {
     visibility: visible;
     opacity: 1;
@@ -938,8 +938,8 @@ footer ul .fas {
 }
 
 .menuItem:hover > .menuItem__confirmation > i {
-  -webkit-animation: rotate 0.6s ease-in-out;
-          animation: rotate 0.6s ease-in-out;
+  -webkit-animation: spin 0.6s ease-in-out;
+          animation: spin 0.6s ease-in-out;
 }
 
 .menuItem__legend {
@@ -993,7 +993,7 @@ footer ul .fas {
   color: #ffffff;
 }
 
-@-webkit-keyframes rotate {
+@-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -1004,7 +1004,7 @@ footer ul .fas {
   }
 }
 
-@keyframes rotate {
+@keyframes spin {
   from {
     -webkit-transform: rotate(0);
             transform: rotate(0);

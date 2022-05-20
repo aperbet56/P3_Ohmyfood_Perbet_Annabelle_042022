@@ -11,7 +11,7 @@
     bottom: 0;
     left: 0;
     z-index: 100;
-    animation: loading-spinner 3s linear;
+    animation: display-loader 3s linear;
     visibility: hidden;
     &__border {
         @include flexcenter;
@@ -27,7 +27,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        animation: loading-spinner-border 3s linear;
+        animation: loading-spinner 3s linear;
         z-index: 50;
         visibility: hidden;
     }
@@ -39,7 +39,7 @@
     }
 }
 
-@keyframes loading-spinner {
+@keyframes display-loader {
     0% {
         visibility: visible;
         opacity: 0.7;
@@ -53,7 +53,7 @@
     }
 }
 
-@keyframes loading-spinner-border {
+@keyframes loading-spinner {
     0% {
         visibility: visible;
         opacity: 1;

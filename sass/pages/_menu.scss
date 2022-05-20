@@ -123,7 +123,7 @@
     &:hover > &__confirmation {
         margin-right: 0;
         & > i {
-            animation: rotate 0.6s ease-in-out;
+            animation: spin 0.6s ease-in-out;
         }
     }
     &__legend {
@@ -163,7 +163,7 @@
     }
 }
 
-@keyframes rotate {
+@keyframes spin {
     from {
         transform: rotate(0);
     }
