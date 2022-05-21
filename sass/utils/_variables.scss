@@ -3,7 +3,7 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
-$gradient: linear-gradient(to bottom right, #f89fe0, #c358eb);
+$gradient: linear-gradient(350deg, $color-tertiary 0%, $color-primary 0%, $color-secondary 100%);
 
 // variables grey
 

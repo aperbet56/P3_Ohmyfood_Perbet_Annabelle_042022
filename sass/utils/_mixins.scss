@@ -9,7 +9,7 @@
 
 @mixin button-style {
     opacity: 1;
-    background: $gradient;
+    background-image: $gradient;
     outline: none;
     border: none;
     border-radius: 100px;
