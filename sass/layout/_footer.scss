@@ -29,6 +29,9 @@ footer {
         }
         & li:last-child {
             margin-bottom: 30px;
+            @include large {
+                margin-bottom: 40px;
+            }
         }
         & .fas {
             color: #ffffff;

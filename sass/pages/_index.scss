@@ -68,7 +68,6 @@
         border-radius: 20px;
         background: $light-grey;
         position: relative;
-        transition: background-color 0.3s ease-in-out;
         @include tablet {
             width: 45%;
             margin: 30px 0;
@@ -95,7 +94,6 @@
         padding: 27px 35px 0 35px;
         color: $working-icon-color;
         font-size: 16px;
-        transition: color 0.3s ease-in-out;
         @include desktop {
             padding: 27px 30px 0 30px;
         }
@@ -108,7 +106,7 @@
 }
 
 .process__step:last-child {
-    background-color: #faf5ff;
+    background: #f1e8fc;
     & .process__icon {
         color: $color-primary;
     }

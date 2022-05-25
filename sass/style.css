@@ -318,6 +318,12 @@ footer ul li:last-child {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1400px) {
+  footer ul li:last-child {
+    margin-bottom: 40px;
+  }
+}
+
 footer ul .fas {
   color: #ffffff;
   width: 15px;
@@ -450,8 +456,6 @@ footer ul .fas {
   border-radius: 20px;
   background: #f6f6f6;
   position: relative;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -495,8 +499,6 @@ footer ul .fas {
   padding: 27px 35px 0 35px;
   color: #696969;
   font-size: 16px;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
@@ -512,7 +514,7 @@ footer ul .fas {
 }
 
 .process__step:last-child {
-  background-color: #faf5ff;
+  background: #f1e8fc;
 }
 
 .process__step:last-child .process__icon {
