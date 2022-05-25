@@ -1,17 +1,18 @@
 header { 
     @include flexcenter();
     position: relative;
-    height: 65px;
+    margin: 25px 0 20px 0;
     width: 100%;
     & h1 {
         font-family: 'Shrikhand', 'sans-serif';
-        font-size: 31px;
         margin: 0;
         }
-    & .fas{
+    & .fas {
         position: absolute;
         left: 20px;
-        top:25px;
-        color: black;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        font-weight: bold; 
     }
 }
