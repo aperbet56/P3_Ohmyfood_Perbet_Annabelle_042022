@@ -26,7 +26,7 @@ a {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 31px;
   font-family: "Shrikhand", "cursive";
 }
 
@@ -42,6 +42,11 @@ h3 {
 p {
   font-size: 16px;
   font-weight: 300;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .presentation__button {
@@ -770,6 +775,12 @@ footer ul .fas {
   }
 }
 
+.menu__title {
+  font-family: "Shrikhand", "cursive";
+  font-size: 25px;
+  margin-top: 15px;
+}
+
 .menu__btn__heart {
   height: 26px;
   width: 26px;
@@ -877,7 +888,6 @@ footer ul .fas {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 19px;
 }
 
 .submenu__title::after {
@@ -922,16 +932,11 @@ footer ul .fas {
   overflow: hidden;
 }
 
-.menuItem h3,
+.menuItem h4,
 .menuItem p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.menuItem h3 {
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .menuItem p {
