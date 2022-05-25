@@ -39,11 +39,6 @@ h3 {
   font-weight: 500;
 }
 
-h4 {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 p {
   font-size: 16px;
   font-weight: 300;
@@ -945,11 +940,16 @@ footer ul .fas {
   overflow: hidden;
 }
 
-.menuItem h4,
+.menuItem h3,
 .menuItem p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.menuItem h3 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .menuItem p {
