@@ -1,22 +1,17 @@
-header {
-    width: 100%;
+header { 
+    @include flexcenter();
     position: relative;
-    .logo {
-        @include flexcenter();
-        margin: 25px 0 20px 0;
-        & img {
-            width: 170px;
+    height: 65px;
+    width: 100%;
+    & h1 {
+        font-family: 'Shrikhand', 'sans-serif';
+        font-size: 31px;
+        margin: 0;
         }
-        & .fa-arrow-left {
-            position: absolute;
-            left: 32px;
-            height: 32px;
-            width: 32px;
-            @include flexcenter();
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 18px;
-            font-weight: bold;
-        }
+    & .fas{
+        position: absolute;
+        left: 20px;
+        top:25px;
+        color: black;
     }
 }
