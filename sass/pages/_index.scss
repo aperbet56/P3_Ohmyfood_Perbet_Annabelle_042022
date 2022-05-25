@@ -23,6 +23,8 @@
     padding: 40px;
     &__title {
         text-align: center;
+        font-size: 21px;
+        font-family: "Roboto", sans-serif;
         padding: 0 17px;
     }
     &__text {
@@ -94,7 +96,7 @@
         width: 22px;
         height: 22px;
         position: absolute;
-        left: -12px;
+        left: -11px;
         top: 50%;
         transform: translateY(-50%);
     }   
